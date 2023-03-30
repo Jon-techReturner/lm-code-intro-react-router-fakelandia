@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-// import Footer from "../shared/footer/footer";
+import Footer from "../sharePoint/footer/footer";
 import Navbar from "../navbar";
 import Header from "../header";
 const MainLayout: React.FC = () => {
@@ -11,7 +11,7 @@ const MainLayout: React.FC = () => {
         <Header />
         <Outlet />
       </div>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };

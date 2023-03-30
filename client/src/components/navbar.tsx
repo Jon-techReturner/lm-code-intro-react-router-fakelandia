@@ -1,3 +1,5 @@
+import "./navbar.css";
+
 function Navbar(): JSX.Element {
 	return (
 		<nav className="nav__container">

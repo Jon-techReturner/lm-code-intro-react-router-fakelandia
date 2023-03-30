@@ -7,11 +7,9 @@
 	--red: #f95738;
 }
 
-body {
-	background-color: var(--light);
-	margin: 0;
+.header__container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 }
-
-
-
-
