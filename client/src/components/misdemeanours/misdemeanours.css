@@ -5,3 +5,30 @@
     flex-direction: column;
     padding-bottom: 5px;
 }
+.misdemeanours__table {
+    border: 2px solid #FFFFFF;
+    width: 50%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+table.misdemeanours__table  tbody td {
+    font-size: 13px;
+  }
+  table.misdemeanours__table  td:nth-child(odd) {
+    background: #EBEBEB;
+  }
+  table.misdemeanours__table  thead {
+    background: #FFFFFF;
+    border-bottom: 4px solid #333333;
+  }
+  table.misdemeanours__table  thead th {
+    font-size: 15px;
+    font-weight: bold;
+    color: #333333;
+    text-align: center;
+    border-left: 2px solid #333333;
+  }
+  table.misdemeanours__table  thead th:first-child {
+    border-left: none;
+  }

@@ -11,7 +11,7 @@ const Misdemeanours: React.FC = () => {
         <h2 className="pageHeading">Misdemeanours</h2>
           <FilterProvider>
             <Filter />
-            <table className="table">
+            <table className="misdemeanours__table">
               <tbody>
                 <MisdemeanourHeading />
                 <MisdemeanourRows />

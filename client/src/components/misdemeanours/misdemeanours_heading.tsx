@@ -1,12 +1,14 @@
+import './misdemeanours_heading.css';
+
 const MisdemeanourHeading: React.FC = () => {
     return (
       <>
         <tr className="table__row">
-          <td className="table__cell">Citizen ID</td>
-          <td className="table__cell">Date</td>
-          <td className="table__cell">Misdemeanour</td>
-          <td className="table__cell">Description</td>
-          <td className="table__cell">Punishment idea</td>
+          <th className="table__cell">Citizen ID</th>
+          <th className="table__cell">Date</th>
+          <th className="table__cell">Misdemeanour</th>
+          <th className="table__cell">Description</th>
+          <th className="table__cell">Punishment idea</th>
         </tr>
       </>
     );
