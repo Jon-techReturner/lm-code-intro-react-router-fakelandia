@@ -1,15 +1,18 @@
-import React from 'react';
-import './App.css';
-import Header from './components/header';
-import Navbar from './components/navbar';
+import { HashRouter } from "react-router-dom";
+import { ErrorBoundary } from "react-error-boundary";
+import "./App.css";
+import Router from "./components/router/router";
+import ErrorFallback from "./components/sharePoint/error_fallback/error";
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Header />
+      <ErrorBoundary FallbackComponent={ErrorFallback}>
+        <HashRouter>
+          <Router />
+        </HashRouter>
+      </ErrorBoundary>
     </>
-    
   );
 }
 

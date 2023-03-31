@@ -27,7 +27,7 @@ function addHealthCheck(app: Express) {
 
 	console.log('🏠❤️‍🩹  Adding health check route...');
 	baseRouter.get('/health', (req, res) => {
-		res.status(200).send('👍 Okay! The server is responding! 🙌');
+		res.status(200).send('👍 Great Job! Your server is running 🙌');
 	});
 
 	console.log('🛠️  Applying base router to Express server...');
