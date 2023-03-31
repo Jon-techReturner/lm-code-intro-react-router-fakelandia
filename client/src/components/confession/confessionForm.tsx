@@ -12,6 +12,7 @@ import ConfessButton from "./confess_button";
 import ReasonForContact from "./reasonsContact";
 import Subject from "./subject";
 import Thankyou from "./thankyou";
+import './confessionForm.css';
 
 const ConfessionForm: React.FC = () => {
   const newConfession: ConfessProps = useConfession();
@@ -46,7 +47,7 @@ const ConfessionForm: React.FC = () => {
   };
 
   return (
-    <div className="confessionDisplay">
+    <div className="confession__container">
       <form className="confessionForm" onSubmit={saveConfession}>
         <Subject />
         <ReasonForContact />

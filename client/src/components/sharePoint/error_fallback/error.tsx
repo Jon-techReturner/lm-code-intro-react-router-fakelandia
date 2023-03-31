@@ -1,3 +1,5 @@
+import './error.css';
+
 interface ErrorFallbackProps {
     error: Error;
   }
