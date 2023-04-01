@@ -1,15 +1,18 @@
-import './misdemeanours_heading.css';
+import "./misdemeanours.css";
 
 const MisdemeanourHeading: React.FC = () => {
     return (
       <>
-        <tr className="table__row">
-          <th className="table__cell">Citizen ID</th>
-          <th className="table__cell">Date</th>
-          <th className="table__cell">Misdemeanour</th>
-          <th className="table__cell">Description</th>
-          <th className="table__cell">Punishment idea</th>
-        </tr>
+      
+        <tr className="flex-table header" role="rowgroup">
+            <th className="flex-row first" role="columnheader">Citizen ID</th>
+            <th className="flex-row" role="columnheader">Date</th>
+            <th className="flex-row" role="columnheader">Misdemeanour</th>
+            <th className="flex-row" role="columnheader">Description</th>
+            <th className="flex-row" role="columnheader">Punishment idea</th>
+          </tr>
+     
+       
       </>
     );
   };

@@ -11,14 +11,14 @@ const LoadingTime: React.FC = () => {
       <ThreeCircles
             height="100"
             width="100"
-            color="#4fa94d"
+            color="#0d3b66"
             wrapperStyle={{}}
             wrapperClass=""
             visible={true}
             ariaLabel="three-circles-rotating"
-            outerCircleColor="#ee964b"
-            innerCircleColor="#f4d35e"
-            middleCircleColor="#f95738"
+            outerCircleColor="#0d3b66"
+            innerCircleColor="#0d3b66"
+            middleCircleColor="#0d3b66"
             />
       </div>
       <Footer />

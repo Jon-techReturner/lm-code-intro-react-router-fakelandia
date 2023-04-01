@@ -1,6 +1,7 @@
 import { useFilterOption } from "../../context/filter_context";
 import { useMisdemeanours } from "../../context/misdemeanours_context";
-import { misdemeanourText, MisdemeanourEntry } from "../../client_services/misdemeanours"
+import { misdemeanourText, MisdemeanourEntry } from "../../client_services/misdemeanours";
+import "./misdemeanours.css";
 
 const MisdemeanourRow: React.FC = () => {
   const misdemeanours: Array<MisdemeanourEntry> = useMisdemeanours();
@@ -22,14 +23,14 @@ const MisdemeanourRow: React.FC = () => {
           rowClass += " table__row--selfconfessed";
         }
         return (
-          <tr key={index} className={rowClass}>
-            <td className="table__cell">{misdemeanourEntry.citizenId}</td>
-            <td className="table__cell">{misdemeanourEntry.date}</td>
-            <td className="table__cell">
+          <tr key={index} className={rowClass + `flex-table row`} role="rowgroup">
+            <td className="flex-row first" role="cell">{misdemeanourEntry.citizenId}</td>
+            <td className="flex-row" role="cell">{misdemeanourEntry.date}</td>
+            <td className="flex-row" role="cell">
               {misdemeanourText[misdemeanourEntry.misdemeanour]}
             </td>
-            <td className="table__cell">{misdemeanourEntry.description}</td>
-            <td className="table__cell">
+            <td className="flex-row" role="cell">{misdemeanourEntry.description}</td>
+            <td className="flex-row" role="cell">
               <img
                 className="table__image"
                 alt={`Punishment for ${misdemeanourEntry.misdemeanour}`}
