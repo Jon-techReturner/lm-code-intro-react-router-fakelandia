@@ -3,10 +3,12 @@ import "./misdemeanours.css";
 import MisdemeanourRows from "./mis_row";
 import Filter from "./filter";
 import FilterProvider from "../../context/filter_context";
+import DisabledProvider from "../../context/disabled_context";
 
 const Misdemeanours: React.FC = () => {
   return (
     <>
+      <DisabledProvider>
       <div className="misdemeanours__container">
         <h2 className="pageHeading">Misdemeanours</h2>
           <FilterProvider>
@@ -21,6 +23,7 @@ const Misdemeanours: React.FC = () => {
             </table>
           </FilterProvider>
       </div>
+      </DisabledProvider>
     </>
   );
 };

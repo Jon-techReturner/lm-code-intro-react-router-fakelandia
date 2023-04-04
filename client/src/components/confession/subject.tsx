@@ -21,7 +21,7 @@ const Subject: React.FC = () => {
 
   return (
     <div className="confessionForm__element">
-      <Label forID="subject" labelText="Subject" />
+      <Label labelID="subject" labelText="Subject" />
       <TextInput
         id="subject"
         value={confession.subject}

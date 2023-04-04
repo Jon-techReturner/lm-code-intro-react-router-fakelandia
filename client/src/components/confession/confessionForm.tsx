@@ -16,6 +16,7 @@ import './confessionForm.css';
 
 const ConfessionForm: React.FC = () => {
   const newConfession: ConfessProps = useConfession();
+  console.log('I am here');
   const updateConfession = useConfessionUpdate();
   const updateMisdemeanours = useMisdemeanoursUpdate();
 

@@ -8,7 +8,7 @@ const Filter: React.FC = () => {
   const filterOptionUpdate = useFilterOptionUpdate();
   return (
     <div className="misdemeanours__filter">
-      <Label forID="filter" labelText="Filter by misdemeanour" />
+      <Label labelID="filter" labelText="Filter by misdemeanour" />
       <Select
         id="filter"
         values={misdemeanourText}

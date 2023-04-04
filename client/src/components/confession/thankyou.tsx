@@ -13,7 +13,7 @@ const Thankyou: React.FC = () => {
         misdemeanours.filter((misdemeanour) => misdemeanour.selfConfessed)
           .length > 0 && (
           <Label
-            forID="thankyou"
+            labelID="thankyou"
             labelText="Thank you for your confession or vent"
           />
         )}
